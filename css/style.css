@@ -100,10 +100,6 @@ p, li{
   width: 48%;
   margin-left: 4%;
 }
-ul.ul-projects li {   
-  list-style: none;
-  line-height: 1.5;
-}
 .invisible {
   visibility: hidden;
 }
@@ -131,7 +127,4 @@ ul.ul-projects li {
     content: '';
     width: unset;
   }
-}
-@media (max-width: 500px) {
-
 }

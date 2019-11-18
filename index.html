@@ -14,7 +14,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png?v=1.1">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png?v=1.1">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png?v=1.1">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=1.5">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=1.6">
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree|Quicksand|Monoton|Black+Ops+One|Allerta+Stencil|La+Belle+Aurore|Open+Sans|Anonymous+Pro" rel="stylesheet">
@@ -31,36 +31,8 @@
 	  gtag('config', 'UA-136451213-1');
 	</script>
 	<!-- endGlobal site tag (gtag.js) - Google Analytics -->
-
-	<!-- scripts -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/baffle.min.js"></script>
 </head>
 <body>
-	<script type="text/javascript">
-		$(window).on('DOMContentLoaded', function () {
-			let c = baffle('.myname')
-		    .start()
-		    .set({
-		      characters: 'Abcdefghijklmnopqrstuvwxyz',
-		      speed: 90
-		    })
-		    .reveal(
-		      [1000], [700]
-		    );
-
-		  let b = baffle('.profile span')
-		    .start()
-		    .set({
-		      characters: '█▒█ ░▒<<█ █//▓▒ >▓> █░▒/░ ░>▒▓ >/▒ <█>▒ ▒▒░>',
-		      speed: 90
-		    })
-		    .reveal(
-		      [2000], [1000]
-		    );
-		});
-	</script>
-	
 	<div id="particles-js">
 		<div class="container">
 			<section class="wrapper">
@@ -151,10 +123,12 @@
 		</div>
 	</div>
 
+	<!-- scripts -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/baffle.min.js"></script>
 	<script src="js/particles.min.js"></script>
 	<script>document.write
 		("<script type='text/javascript' src='js/app.js?v=" + Date.now() + "'><\/script>");
 	</script>
-
 </body>
 </html>
