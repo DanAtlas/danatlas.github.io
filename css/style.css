@@ -7,6 +7,7 @@
   --dark: #555560;
   --white: #fff;
   --gradient: linear-gradient(326deg, #a4508b 0%, #5f0a87 90%);
+  --bg-dark: #292b36;
 }
 
 body {

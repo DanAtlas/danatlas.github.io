@@ -14,7 +14,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png?v=1.1">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png?v=1.1">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png?v=1.1">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=1.4">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=1.5">
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree|Quicksand|Monoton|Black+Ops+One|Allerta+Stencil|La+Belle+Aurore|Open+Sans|Anonymous+Pro" rel="stylesheet">
@@ -31,36 +31,8 @@
 	  gtag('config', 'UA-136451213-1');
 	</script>
 	<!-- endGlobal site tag (gtag.js) - Google Analytics -->
-
-	<!-- scripts -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/baffle.min.js"></script>
 </head>
 <body>
-	<script type="text/javascript">
-		$(window).on('load', function () {
-		let c = baffle('.myname span')
-		    .start()
-		    .set({
-		      characters: 'Abcdefghijklmnopqrstuvwxyz',
-		      speed: 90
-		    })
-		    .reveal(
-		      [1000], [700]
-		    );
-
-		  let b = baffle('.profile span')
-		    .start()
-		    .set({
-		      characters: '█▒█ ░▒<<█ █//▓▒ >▓> █░▒/░ ░>▒▓ >/▒ <█>▒ ▒▒░>',
-		      speed: 90
-		    })
-		    .reveal(
-		      [2000], [1000]
-		    );
-		});
-	</script>
-	
 	<div id="particles-js">
 		<div class="container">
 			<section class="wrapper">
@@ -127,7 +99,7 @@
 								</li>
 								<li>
 									Mini encryption and decryption app -
-									<a href="https://cipher.surge.sh/" target="_blank">Caesar cipher</a>
+									<a href="https://danatlas.github.io/caesar-cipher/" target="_blank">Caesar cipher</a>
 								</li>
 							</ul>
 						</div>
@@ -139,7 +111,7 @@
 					<a href="https://www.linkedin.com/in/danatlas/" target="_blank">LinkedIn</a>
 					<a href="https://t.me/danatlas" target="_blank">Telegram</a>
 					<a href="mailto:abishev295@gmail.com" target="_blank">Gmail</a>
-					<a href="https://drive.google.com/file/d/1Gc9dGsq3bba1_C8WOJlAs4uf1afdRAA_/view" target="_blank">CV</a>
+					<a href="https://drive.google.com/file/d/1MqvjZ3NDOWSBgCGlFRdbntYY11ctyanc/view" target="_blank">CV</a>
 				</p>
 			</section>
 			
@@ -151,10 +123,12 @@
 		</div>
 	</div>
 
+	<!-- scripts -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/baffle.min.js"></script>
 	<script src="js/particles.min.js"></script>
 	<script>document.write
 		("<script type='text/javascript' src='js/app.js?v=" + Date.now() + "'><\/script>");
 	</script>
-
 </body>
 </html>
