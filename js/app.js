@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-	$('.myname, .profile').fadeIn();
+	$('.myname, .profile').fadeIn(1000);
 	let c = baffle('.myname')
     .start()
     .set({
