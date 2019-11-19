@@ -17,6 +17,7 @@ body {
   background: -webkit-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(243,243,243,1) 47%, rgba(232,232,232,1) 100%);
   background: -moz-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(243,243,243,1) 47%, rgba(232,232,232,1) 100%);
   background: linear-gradient(top, rgba(250,250,250,1) 0%, rgba(243,243,243,1) 47%, rgba(232,232,232,1) 100%);
+  color: var(--dark);
 }
 canvas {
   position: absolute;
@@ -39,7 +40,7 @@ a {
 a:hover,
 h3 {
   font-family: probold;
-  color: var(--pink); 
+  color: var(--pink) !important; 
   background-image: var(--gradient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -50,7 +51,6 @@ h3 {
   font-size: 24px;
 }
 p, li{
-  color: var(--dark);
   line-height: 1.5;
   margin: 8px 0;
 }
@@ -60,7 +60,6 @@ p, li{
 }
 .myname {
   margin-bottom: 15px;
-  color: var(--dark);
   font-size: 38px;
   font-family: probold;
   text-shadow: 1px 1px 16px rgba(0, 0, 0, 0.5);
