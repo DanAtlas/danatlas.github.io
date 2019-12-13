@@ -1,5 +1,4 @@
-@import 'normalize.css';
-@import 'fonts.css';
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&display=swap&subset=cyrillic');
 
 :root {
   --purple: #5F0A87;
@@ -12,7 +11,7 @@
 
 body {
   position: relative;
-  font-family: 'proregular';
+  font-family: 'Anonymous Pro', monospace;
   height: 100%;	
   background: -webkit-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(243,243,243,1) 47%, rgba(232,232,232,1) 100%);
   background: -moz-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(243,243,243,1) 47%, rgba(232,232,232,1) 100%);
@@ -39,7 +38,7 @@ a {
 }
 a:hover,
 h3 {
-  font-family: probold;
+  font-weight: 700;
   color: var(--pink) !important; 
   background-image: var(--gradient);
   -webkit-background-clip: text;
@@ -61,7 +60,7 @@ p, li{
 .myname {
   margin-bottom: 15px;
   font-size: 38px;
-  font-family: probold;
+  font-weight: 700;
   text-shadow: 1px 1px 16px rgba(0, 0, 0, 0.5);
 }
 .profile {

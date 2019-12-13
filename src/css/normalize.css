@@ -9,7 +9,7 @@
   text-rendering: optimizeLegibility;
 	/* firefox scrollbar */
 	scrollbar-width: thin;
-	scrollbar-color: var(--pink) #e0e0e0;
+	scrollbar-color: var(--dark) #e0e0e0;
 }
 
 /* Scrollbar */
