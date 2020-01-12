@@ -24,7 +24,7 @@ let b = baffle('.profile span')
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value":100, "density": {
+      "value":120, "density": {
         "enable": true, "value_area": 800
       }
     }, 
@@ -117,11 +117,11 @@ function darkMode() {
     document.body.style.background = "var(--bg-dark)";
     document.body.style.color = "var(--white)";
     document.querySelector('h1').style.cssText = "text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.2);";
-    var myTitles = document.querySelectorAll('h3');
+    let myTitles = document.querySelectorAll('h3');
     for (let myTitle of myTitles) {
 	    myTitle.style.cssText += "background-image: unset; -webkit-text-fill-color: unset; -webkit-background-clip: unset; background-clip: unset;"
 	  }
-    var myLinks = document.querySelectorAll('a');
+    let myLinks = document.querySelectorAll('a');
     for (let myLink of myLinks) {
 	    myLink.style.cssText = "color: var(--white); background-image: unset; -webkit-text-fill-color: unset; -webkit-background-clip: unset; background-clip: unset"
 	  }
