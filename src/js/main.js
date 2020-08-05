@@ -106,25 +106,15 @@ particlesJS("particles-js", {
 // DarkMode
 function darkMode() {
   let time = new Date(),
-    	hour = time.getHours();
+      hour = time.getHours(),
+      b = document.body;
 
   if (hour > 7 && hour < 20) {
     // Morning
-    document.body.style.background = "-webkit-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(243,243,243,1) 47%, rgba(232,232,232,1) 100%)";
-    document.body.style.color = "var(--dark)";
+    b.className += "light_theme";
   } else {
     // Evening
-    document.body.style.background = "var(--bg-dark)";
-    document.body.style.color = "var(--white)";
-    document.querySelector('h1').style.cssText = "text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.2);";
-    let myTitles = document.querySelectorAll('h3');
-    for (let myTitle of myTitles) {
-	    myTitle.style.cssText += "background-image: unset; -webkit-text-fill-color: unset; -webkit-background-clip: unset; background-clip: unset;"
-	  }
-    let myLinks = document.querySelectorAll('a');
-    for (let myLink of myLinks) {
-	    myLink.style.cssText = "color: var(--white); background-image: unset; -webkit-text-fill-color: unset; -webkit-background-clip: unset; background-clip: unset"
-	  }
+    b.className += "dark_theme";
   }
 }
 

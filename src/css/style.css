@@ -18,6 +18,18 @@ body {
   background: linear-gradient(top, rgba(250,250,250,1) 0%, rgba(243,243,243,1) 47%, rgba(232,232,232,1) 100%);
   color: var(--dark);
 }
+body.dark_theme {
+  background: var(--bg-dark);
+  color: var(--white);
+}
+body.dark_theme h3,
+body.dark_theme a {
+  background-image: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: var(--white);
+}
 canvas {
   position: absolute;
   top: 0;

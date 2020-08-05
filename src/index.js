@@ -1,4 +1,3 @@
 import './js/particles.min';
 import './js/main';
-import './css/normalize.css';
-import './css/style.css';
+import './scss/style.scss';
