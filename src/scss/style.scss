@@ -381,8 +381,8 @@ footer {
   }
 }
 @media (max-width: 500px) {
-  .top {
-    &-cv-link {
+  .top-info {
+    .top-cv-link {
       position: relative;
       top: 0;
       margin-left: 20px;
