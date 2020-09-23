@@ -9,7 +9,7 @@ body {
   &.dark_theme {
     background: $bg-dark;
     color: $white;
-    h3, a {
+    h2, a {
       background-image: unset;
       -webkit-text-fill-color: unset;
       -webkit-background-clip: unset;
@@ -46,7 +46,9 @@ canvas {
 }
 .heading,
 .heading+p,
-.heading+ul {
+.heading+ul,
+.experience,
+.experience ul {
   animation: fadeInUp .5s both;
 }
 .top-mail-link {
@@ -55,26 +57,26 @@ canvas {
 .top-cv-link {
   animation-delay: 250ms;
 }
-.heading-1 {
+.h_1 {
   animation-delay: 300ms;
 }
-.heading-1+p {
+.h_1+p {
   animation-delay: 400ms;
 }
-.heading-2 {
+.h_2 {
   animation-delay: 500ms;
 }
-.first-col ul {
+.experience {
   animation-delay: 600ms; 
 }
-.second-col ul {
+.experience ul {
   animation-delay: 700ms; 
 }
-.heading-3 {
-  animation-delay: 800ms;
+.h_3 {
+  animation-delay: 1200ms;
 }
-.heading-3+p {
-  animation-delay: 900ms;
+.h_3+p {
+  animation-delay: 1300ms;
 }
 .author a {
   animation-delay: 1000ms;
@@ -88,37 +90,9 @@ canvas {
     opacity: 1;
   }
 }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeInUp {
   from {
     transform: translate3d(0,30px,0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0,0,0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeInUp {
-  from {
-    transform: translate3d(0,20px,0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0,0,0);
-    opacity: 1;
-  }
-}
-@keyframes fadeInDown {
-  from {
-    transform: translate3d(0,-30px,0);
     opacity: 0;
   }
   to {
@@ -144,14 +118,6 @@ canvas {
     height: 95px;
   }
 }
-@-webkit-keyframes animateHeight {
-  from {
-    height: 0;
-  }  
-  to {
-    height: 95px;
-  }
-}
 // END animations
 
 a:not(.side-link) {
@@ -160,7 +126,7 @@ a:not(.side-link) {
   text-decoration: none;
 }
 a:hover,
-h3 {
+h2 {
   font-weight: 700;
   color: $pink !important; 
   background-image: $gradient;
@@ -168,9 +134,19 @@ h3 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-h3 {  
+h2, h3, h4 {
+  color: $dark;
+}
+h2 {
   margin: 18px 0;
   font-size: 24px;
+}
+h3 {
+  margin: 14px 0;
+}
+.subheading {
+  margin: 20px 0 12px;
+  color: $grey;
 }
 p, li {
   line-height: 1.5;
@@ -315,27 +291,23 @@ p, li {
   }
 }
 
+.experience {
+  ul {
+    padding-left: 16px;
+    li {
+      list-style: disc;
+      margin: 4px 0;
+    }
+  }
+}
+
 // Bot Projects
-.works {
-  width: 100%;
-  display: flex;
-}
-.first-col {
-  width: 48%;
-}
-.second-col {
-  width: 48%;
-  margin-left: 4%;
-}
-.invisible {
-  visibility: hidden;
-}
 .bottom-links {
   display: none;
-}
-.social a {
-  margin-right: 8px;
-  list-style: none;
+  .social a {
+    margin-right: 8px;
+    list-style: none;
+  }
 }
 
 /* footer */
@@ -369,14 +341,14 @@ footer {
     content: '';
     display: table;
     clear: both;
-  }
-  .first-col,
-  .second-col {
-    width: 100%;
-    margin-left: 0;
-    &::before {
-      content: '';
-      width: unset;
+    .first-col,
+    .second-col {
+      width: 100%;
+      margin-left: 0;
+      &::before {
+        content: '';
+        width: unset;
+      }
     }
   }
 }

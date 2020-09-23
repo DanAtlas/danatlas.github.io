@@ -107,14 +107,14 @@ particlesJS("particles-js", {
 function darkMode() {
   let time = new Date(),
       hour = time.getHours(),
-      b = document.body;
+      body = document.body;
 
   if (hour > 7 && hour < 20) {
     // Morning
-    b.className += "light_theme";
+    body.className += "light_theme";
   } else {
     // Evening
-    b.className += "dark_theme";
+    body.className += "dark_theme";
   }
 }
 
